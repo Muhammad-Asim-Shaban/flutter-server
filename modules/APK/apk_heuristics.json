@@ -1,0 +1,53 @@
+[
+  {
+    "function": "dangerous_permission_check",
+    "severity": "DEPENDS",
+    "keywords": [
+      "android.permission.SEND_SMS",
+      "android.permission.RECEIVE_SMS",
+      "android.permission.READ_SMS",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.READ_CALL_LOG",
+      "android.permission.WRITE_CALL_LOG",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.CAMERA",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_BACKGROUND_LOCATION",
+      "android.permission.READ_CONTACTS",
+      "android.permission.WRITE_CONTACTS",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.REQUEST_INSTALL_PACKAGES",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "android.permission.BIND_DEVICE_ADMIN",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.QUERY_ALL_PACKAGES"
+    ]
+  },
+  {
+    "function": "dangerous_intent_check",
+    "severity": "DEPENDS",
+    "keywords": [
+      "android.intent.action.BOOT_COMPLETED",
+      "android.intent.action.LOCKED_BOOT_COMPLETED",
+      "android.provider.Telephony.SMS_RECEIVED",
+      "android.provider.Telephony.WAP_PUSH_RECEIVED",
+      "android.intent.action.PACKAGE_ADDED",
+      "android.intent.action.PACKAGE_REPLACED",
+      "android.intent.action.PACKAGE_REMOVED",
+      "android.intent.action.NEW_OUTGOING_CALL",
+      "android.intent.action.USER_PRESENT",
+      "android.intent.action.SCREEN_ON",
+      "android.intent.action.SCREEN_OFF",
+      "android.intent.action.ACTION_POWER_CONNECTED",
+      "android.intent.action.ACTION_POWER_DISCONNECTED",
+      "android.intent.action.DEVICE_STORAGE_LOW",
+      "android.intent.action.DEVICE_STORAGE_OK",
+      "android.intent.action.MY_PACKAGE_REPLACED",
+      "android.intent.action.QUICKBOOT_POWERON"
+    ]
+  }
+]

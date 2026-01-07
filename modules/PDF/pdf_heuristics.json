@@ -1,0 +1,43 @@
+[
+  {
+    "function": "javascript_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "embedded_files_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "url_finding_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "obfuscated_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "metadata_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "pdf_size_check",
+    "severity": "MEDIUM",
+    "size_threshold": 50
+  },
+  {
+    "function": "openaction_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "invisible_objects_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "malformed_pdf_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "javascript_libraries_check",
+    "severity": "LOW"
+  }
+]

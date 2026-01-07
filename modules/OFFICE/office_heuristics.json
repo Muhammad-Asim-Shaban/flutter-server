@@ -1,0 +1,48 @@
+[
+  {
+    "function": "macros_present_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "large_macro_check",
+    "severity": "MEDIUM",
+    "size_threshold": 5000
+  },
+  {
+    "function": "social_engineering_check",
+    "severity": "LOW",
+    "keywords": [
+      "enable content",
+      "enable editing",
+      "security warning",
+      "protected view"
+    ]
+  },
+  {
+    "function": "autoexec_macro_check",
+    "severity": "HIGH",
+    "keywords": [
+      "autoopen",
+      "document_open",
+      "workbook_open",
+      "presentation_open"
+    ]
+  },
+  {
+    "function": "suspicious_vba_function_check",
+    "severity": "HIGH",
+    "keywords": [
+      "shell",
+      "createobject",
+      "getobject",
+      "wscript.shell",
+      "winhttprequest",
+      "xmlhttp",
+      "adodb.stream"
+    ]
+  },
+  {
+    "function": "embedded_ole_object_check",
+    "severity": "MEDIUM"
+  }
+]

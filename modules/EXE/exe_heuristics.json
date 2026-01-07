@@ -1,0 +1,80 @@
+[
+  {
+    "function": "file_size_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "metadata_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "signature_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "timestamp_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "entry_point_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "section_count_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "section_name_check",
+    "severity": "LOW"
+  },
+  {
+    "function": "rwx_section_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "entropy_check",
+    "severity": "HIGH"
+  },
+  {
+    "function": "dominant_section_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "dynamic_api_check",
+    "severity": "HIGH",
+    "keywords": [
+      "LoadLibraryA", "LoadLibraryW", "GetProcAddress",
+      "VirtualProtect", "VirtualAlloc", "VirtualAllocEx",
+      "WriteProcessMemory", "ReadProcessMemory",
+      "CreateRemoteThread", "CreateRemoteProcess",
+      "NtAllocateVirtualMemory", "NtProtectVirtualMemory",
+      "WinExec", "ShellExecuteA", "ShellExecuteW",
+      "URLDownloadToFileA", "URLDownloadToFileW",
+      "InternetOpenA", "InternetOpenW",
+      "InternetReadFile", "HttpSendRequestA",
+      "WSASocketA", "connect", "recv", "send", "IsWow64Process"
+    ]
+  },
+  {
+    "function": "tls_check",
+    "severity": "MEDIUM"
+  },
+  {
+    "function": "network_string_check",
+    "severity": "HIGH",
+    "keywords": ["http://", "https://"],
+    "ignore_patterns": []
+  },
+  {
+    "function": "command_string_check",
+    "severity": "HIGH",
+    "keywords": ["cmd.exe", "powershell", "/c ", "-enc"],
+    "ignore_patterns": []
+  },
+  {
+    "function": "registry_string_check",
+    "severity": "HIGH",
+    "keywords": ["CurrentVersion\\Run"],
+    "ignore_patterns": []
+  }
+]
